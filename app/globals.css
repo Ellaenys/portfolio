@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+    --black: rgb(7,7,7,1);
+    --white: rgb(197, 194, 194);
+    --violet: rgb(64,24,58,1);
+    --sand: rgb(124,49,6,1);
+
+    --bg: rgba(10, 10, 10, 0.89);
+    --bg2: rgba(16, 16, 16, 0.89);
+
+    --gr-violet:rgb(64,24,58,0.8);
+    --gr-sand: rgb(124,49,6,0.7);
+
+    --alt-violet:rgb(64,24,58,0.4);
+    --alt-sand: rgb(124,49,6,0.2);
+
+    --bg-gradient: linear-gradient(to right bottom, var(--bg), var(--bg2));
+    --gradient: linear-gradient(90deg, var(--gr-sand) 0%, var(--gr-violet) 100%);
+    --gradient-card: linear-gradient(100deg, var(--alt-violet) 0%, var(--alt-sand) 100%);
+    --gradient-scroll: linear-gradient(120deg, var(--alt-sand) 0%, var(--alt-violet) 100%);
+
+    --border: rgb(64,24,58,0.5);
+    --alt-border: rgb(124,49,6,0.2);
+    --border-card: rgba(145, 140, 140, 0.14);
+    --card:rgb(7,7,7,0.5);
+    --scroll:rgb(7,7,7,0.8);
+
+    --jura: "Jura", sans-serif;
+
+    --fd-sand: url('/fond.png');
+
+
+    ::-webkit-scrollbar {
+        width: 0.8em;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--gradient-scroll);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--scroll);
+        border-radius: 0.2em;
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position:relative;
+    min-height: 70lvh;
+    background: var(--bg-gradient);
+    margin-top: -22lvh;
+    opacity: 0.7;
+}
+
+.header:after{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 25%;
+    left:0;
+    bottom:-0.2em;
+    background: var(--black);
+    clip-path: polygon(100% 100%, 0% 100% , 0.00% 93.33%, 2.00% 93.18%, 4.00% 92.73%, 6.00% 92.01%, 8.00% 91.08%, 10.00% 89.99%, 12.00% 88.83%, 14.00% 87.68%, 16.00% 86.60%, 18.00% 85.69%, 20.00% 84.99%, 22.00% 84.57%, 24.00% 84.45%, 26.00% 84.63%, 28.00% 85.11%, 30.00% 85.85%, 32.00% 86.80%, 34.00% 87.89%, 36.00% 89.06%, 38.00% 90.21%, 40.00% 91.27%, 42.00% 92.17%, 44.00% 92.84%, 46.00% 93.23%, 48.00% 93.33%, 50.00% 93.12%, 52.00% 92.61%, 54.00% 91.85%, 56.00% 90.88%, 58.00% 89.78%, 60.00% 88.61%, 62.00% 87.46%, 64.00% 86.41%, 66.00% 85.54%, 68.00% 84.89%, 70.00% 84.52%, 72.00% 84.46%, 74.00% 84.70%, 76.00% 85.23%, 78.00% 86.01%, 80.00% 87.00%, 82.00% 88.11%, 84.00% 89.28%, 86.00% 90.42%, 88.00% 91.46%, 90.00% 92.31%, 92.00% 92.93%, 94.00% 93.27%, 96.00% 93.31%, 98.00% 93.04%, 100.00% 92.48%);
+}
+
+header:before{
+    content:"";
+    width: 100%;
+    height: 0.5em;
+    position: absolute;
+    background: var(--gradient);
+    top:0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.navbar-font {
+    font-family: var(--jura);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em ;
+}
+
+h1 {
+    text-shadow: 2px 2px 0 var(--sand);
+}
+
+h2 {
+    letter-spacing: 2px;
+}
+
+h2, h3, h4 {
+    font-family: var(--jura);
+    font-variant: all-small-caps;
+}
+
+.asterix {
+    font-family: "Source Code Pro", serif;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 0 var(--gr-violet);
+    position: absolute;
+    bottom:0.058em;
+    left:0.22em;
+
+}
+
+.contact {
+    padding-left: 2em;
+}
+
+
+
+.undeline {
+    padding-inline: 0.15em;
+    background-image: var(--gradient);
+    background-repeat: no-repeat;
+    background-size: 100% 0.4em;
+    background-position: 0 90%;
+    transition: background-size 0.25s ease-in;
+    border-radius: 0.1em;
+    z-index: 1000;
+    position: sticky;
+}
+
+.undeline:hover {
+    background-size: 100% 70% !important;
+
+}
+
+.quickPres div:nth-child(2) {
+    border-left: 1px solid var(--white);
+    border-right: 1px solid var(--white);
+    padding-inline: 1.5em;
+}
+
+.about p {
+    border-bottom: 7px solid transparent;
+    border-image: var(--gradient-card);
+    border-image-slice: 1;
+}
+
+.portrait {
+    z-index: 21;
+}
+
+.skills {
+    position:relative;
+    background: var(--bg-gradient);
+    min-height: 70lvh;
+
+}
+
+.ico-skill img {
+    padding: 0.3em;
+}
+
+.wave-about {
+    position: relative
+}
+
+.about:after{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 20%;
+    left:0;
+    bottom:-10lvh;
+    background: var(--black);
+    z-index: 20;
+    clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.33%, 2.00% 93.18%, 4.00% 92.73%, 6.00% 92.01%, 8.00% 91.08%, 10.00% 89.99%, 12.00% 88.83%, 14.00% 87.68%, 16.00% 86.60%, 18.00% 85.69%, 20.00% 84.99%, 22.00% 84.57%, 24.00% 84.45%, 26.00% 84.63%, 28.00% 85.11%, 30.00% 85.85%, 32.00% 86.80%, 34.00% 87.89%, 36.00% 89.06%, 38.00% 90.21%, 40.00% 91.27%, 42.00% 92.17%, 44.00% 92.84%, 46.00% 93.23%, 48.00% 93.33%, 50.00% 93.12%, 52.00% 92.61%, 54.00% 91.85%, 56.00% 90.88%, 58.00% 89.78%, 60.00% 88.61%, 62.00% 87.46%, 64.00% 86.41%, 66.00% 85.54%, 68.00% 84.89%, 70.00% 84.52%, 72.00% 84.46%, 74.00% 84.70%, 76.00% 85.23%, 78.00% 86.01%, 80.00% 87.00%, 82.00% 88.11%, 84.00% 89.28%, 86.00% 90.42%, 88.00% 91.46%, 90.00% 92.31%, 92.00% 92.93%, 94.00% 93.27%, 96.00% 93.31%, 98.00% 93.04%, 100.00% 92.48%);
+}
+
+.skills:after{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 25%;
+    left:0;
+    bottom:-0.5em;
+    background: var(--black);
+    z-index:20;
+    clip-path: polygon(100% 100%, 0% 100% , 0.00% 93.33%, 2.00% 93.18%, 4.00% 92.73%, 6.00% 92.01%, 8.00% 91.08%, 10.00% 89.99%, 12.00% 88.83%, 14.00% 87.68%, 16.00% 86.60%, 18.00% 85.69%, 20.00% 84.99%, 22.00% 84.57%, 24.00% 84.45%, 26.00% 84.63%, 28.00% 85.11%, 30.00% 85.85%, 32.00% 86.80%, 34.00% 87.89%, 36.00% 89.06%, 38.00% 90.21%, 40.00% 91.27%, 42.00% 92.17%, 44.00% 92.84%, 46.00% 93.23%, 48.00% 93.33%, 50.00% 93.12%, 52.00% 92.61%, 54.00% 91.85%, 56.00% 90.88%, 58.00% 89.78%, 60.00% 88.61%, 62.00% 87.46%, 64.00% 86.41%, 66.00% 85.54%, 68.00% 84.89%, 70.00% 84.52%, 72.00% 84.46%, 74.00% 84.70%, 76.00% 85.23%, 78.00% 86.01%, 80.00% 87.00%, 82.00% 88.11%, 84.00% 89.28%, 86.00% 90.42%, 88.00% 91.46%, 90.00% 92.31%, 92.00% 92.93%, 94.00% 93.27%, 96.00% 93.31%, 98.00% 93.04%, 100.00% 92.48%);
+}
+
+.glass {
+    background: var(--card);
+    border-radius: 1em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.1px);
+    -webkit-backdrop-filter: blur(16.1px);
+    border: 1px solid var(--border-card);
+}
+
+.glass-hover {
+    background: var(--gradient-card);
+}
+
+
+.skill span  {
+    font-family: "Source Code Pro", serif;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+.project-glass {
+        background: var(--bg-gradient);
+        border-radius: 1em;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--border-card);
+}
+
+.txt-project {
+    font-variant: all-small-caps;
+    font-weight: bold;
+}
+
+.chip-project {
+    font-family: "Source Code Pro", serif;
+    font-style: italic;
+    font-size: 1.05em;
+}
+
+.btn-project a, .btn-top{
+    background: var(--gradient-card);
+    box-shadow: 2px 2px 3px rgba(10, 10, 10, 0.72);
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 2em;
+}
+
+
+footer:after{
+    content:"";
+    width: 100%;
+    height: 0.5em;
+    position: absolute;
+    background: var(--gradient);
+    bottom:0;
+    left: 0;
+    opacity: 0.7;
+}
+
+
+
+
+
+
