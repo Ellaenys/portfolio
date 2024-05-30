@@ -11,8 +11,8 @@ import Navigation from "@/app/component/navbar";
 const source:NextFont = Source_Serif_4({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ASHRY LAETITIA",
-  description: "Développeuse web front et designeuse",
+  title: "Laetitia Ashry | Développeuse web et designeuse",
+  description: "Portfolio d'une développeuse web front-end et designeuse. Version 3 réalisée en 2024.  ",
 };
 
 export default function RootLayout({
