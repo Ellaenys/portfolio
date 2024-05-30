@@ -10,7 +10,7 @@ export default function About() {
     return (
 
         <section className={"wave-about"}>
-            <div className={"about flex flex-wrap gap-10 md:justify-center md:items-center container my-10 md:w-1/2"} id={"about"}>
+            <div className={"about flex flex-wrap gap-10 md:justify-center md:items-center container my-10 w-4/5"} id={"about"}>
 
                 <article className={"m-auto px-3 md:w-1/2"}>
                     <h4 className={"font-bold text-4xl"}>{about.title}</h4>
