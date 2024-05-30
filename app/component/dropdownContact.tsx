@@ -1,10 +1,14 @@
 import React from "react";
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
-import {faAddressCard, faC, faVolleyball} from "@fortawesome/free-solid-svg-icons";
+import {
+    faAddressCard,
+    faCodeBranch,
+    faVolleyball
+} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function DropdownContact() {
-    const iconClasses = "text-2xl text-secondary-100 pointer-events-none flex-shrink-0";
+    const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
 
     return (
         <Dropdown classNames={{
@@ -19,25 +23,34 @@ export default function DropdownContact() {
             <DropdownMenu variant="faded" aria-label="Dropdown contact"  itemClasses={{
                 base: [
                     "rounded-md",
-                    "text-default-300",
+                    "text-foreground",
                     "transition-opacity",
                     "data-[hover=true]:text-foreground",
                     "data-[hover=true]:bg-foreground/10",
                     "dark:data-[hover=true]:bg-foreground/10",
                     "data-[selectable=true]:focus:bg-foreground/10",
                     "data-[pressed=true]:opacity-50",
-                    "data-[focus-visible=true]:ring-primary-50/10",
+                    "data-[focus-visible=true]:ring-secondary",
                 ],
             }}>
                 <DropdownItem
                     key="LinkedIn"
                     href="https://www.linkedin.com/in/laetitia-ashry/"
                     target={"_blank"}
-                    showDivider
-                    description="Profil et contact"
+                    description="Mon profil et me contacter"
                     startContent={<FontAwesomeIcon icon={faAddressCard} className={iconClasses} />}
                 >
                     LinkedIn
+                </DropdownItem>
+                <DropdownItem
+                    key="GitHub"
+                    href="https://github.com/Ellaenys/"
+                    target={"_blank"}
+                    showDivider
+                    description="Mes projets"
+                    startContent={<FontAwesomeIcon icon={faCodeBranch} className={iconClasses} />}
+                >
+                    GitHub
                 </DropdownItem>
                 <DropdownItem
                     key="Malt"
@@ -48,15 +61,7 @@ export default function DropdownContact() {
                 >
                     Malt
                 </DropdownItem>
-                <DropdownItem
-                    key="ComeUp"
-                    href="https://comeup.com/fr/"
-                    target={"_blank"}
-                    description="Parler Projet"
-                    startContent={<FontAwesomeIcon icon={faC} className={iconClasses} />}
-                >
-                    ComeUp
-                </DropdownItem>
+
             </DropdownMenu>
         </Dropdown>
     );

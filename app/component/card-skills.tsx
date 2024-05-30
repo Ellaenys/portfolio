@@ -30,7 +30,7 @@ export const CardSkills = ({items, className}: {
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className="absolute inset-0 h-full w-full glass-hover dark:glass-hover block rounded-2xl"
+                                className="absolute inset-0 h-full w-full glass-hover block rounded-xl"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -54,8 +54,7 @@ export const CardSkills = ({items, className}: {
                                 ],
                                 content: [
                                     "py-3 px-4 border border-secondary-50",
-                                    "glass",
-                                    "dark:glass",
+                                    "glass"
                                 ],
                             }}>
                             <PopoverTrigger>
@@ -66,7 +65,7 @@ export const CardSkills = ({items, className}: {
                                     avatarProps={{
                                         src: `${item.icon}`,
                                         isDisabled: false,
-                                        color: "primary",
+                                        color: "secondary",
                                         radius: "md",
                                         size: "md"
                                     }}
@@ -91,7 +90,7 @@ export const CardSkill = ({ className, children }: {
 
         <Card
             className={cn(
-                "h-full w-full p-4 overflow-hidden relative z-20 glass",
+                "h-full w-full p-3 overflow-hidden relative z-20 glass",
                 className
             )}
         >

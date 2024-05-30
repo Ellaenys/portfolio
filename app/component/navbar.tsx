@@ -41,8 +41,8 @@ export default function Navigation() {
                 <NavbarContent className="hidden sm:flex gap-4 my-4" justify="start">
                     {menuItems.map((item, index) => (
                         <NavbarItem key={`${index}`} >
-                            <Link color="foreground" href={item.link} className={"text-sm"} isBlock >
-                                <FontAwesomeIcon icon={item.icon} className={"mr-2 text-white-100"} /> {item.item}
+                            <Link color="foreground" href={item.link} className={"text-sm text-foreground"} isBlock >
+                                <FontAwesomeIcon icon={item.icon} className={"mr-2 text-foreground/70"} /> {item.item}
                             </Link>
                         </NavbarItem>
                     ))}

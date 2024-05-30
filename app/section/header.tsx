@@ -2,12 +2,7 @@ import React from "react";
 import {faCode, faCubes, faPalette,} from "@fortawesome/free-solid-svg-icons";
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {
-    BackgroundGradient
-} from "@/app/component/background-gradient";
-import {
-    BackgroundBeams
-} from "@/app/component/background-beams";
+import {BackgroundBeams} from "@/app/component/background-beams";
 
 
 export default function Header() {
@@ -43,8 +38,8 @@ export default function Header() {
             <article className={"flex md:gap-8 gap-3 justify-center md:mt-36 mt-20 quickPres"}>
                 {quickPres.map((item, index) => (
                     <div key={`${index}`} className={"flex flex-col gap-5"}>
-                            <FontAwesomeIcon icon={item.icon} className={"mr-2 text-foreground text-2xl"} />
-                        <h3 className={"text-lg font-bold"}>{item.name}</h3>
+                            <FontAwesomeIcon icon={item.icon} className={"mr-2 text-foreground/70 text-2xl"} />
+                        <h3 className={"text-lg font-bold text-foreground"}>{item.name}</h3>
                     </div>
                 ))}
             </article>

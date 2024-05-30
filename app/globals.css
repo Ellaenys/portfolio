@@ -14,13 +14,15 @@
     --bg: rgba(10, 10, 10, 0.89);
     --bg2: rgba(16, 16, 16, 0.89);
 
-    --gr-violet:rgb(64,24,58,0.8);
-    --gr-sand: rgb(124,49,6,0.7);
+    --gr-violet:rgb(64,24,58,0.9);
+    --gr-sand: rgb(124,49,6,0.8);
 
-    --alt-violet:rgb(64,24,58,0.4);
-    --alt-sand: rgb(124,49,6,0.2);
+    --alt-violet:rgb(64,24,58,0.7);
+    --alt-sand: rgb(124,49,6,0.5);
 
-    --bg-gradient: linear-gradient(to right bottom, var(--bg), var(--bg2));
+    --white-sepa: rgb(197, 194, 194, 0.7);
+
+    --bg-gradient: linear-gradient(80deg, var(--bg),var(--bg2));
     --gradient: linear-gradient(90deg, var(--gr-sand) 0%, var(--gr-violet) 100%);
     --gradient-card: linear-gradient(100deg, var(--alt-violet) 0%, var(--alt-sand) 100%);
     --gradient-scroll: linear-gradient(120deg, var(--alt-sand) 0%, var(--alt-violet) 100%);
@@ -33,7 +35,7 @@
 
     --jura: "Jura", sans-serif;
 
-    --fd-sand: url('/fond.png');
+    --fd: url('/fond.png');
 
 
     ::-webkit-scrollbar {
@@ -58,7 +60,9 @@ html {
 .header {
     position:relative;
     min-height: 70lvh;
-    background: var(--bg-gradient);
+    background-image: var(--fd);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: -22lvh;
     opacity: 0.7;
 }
@@ -139,8 +143,8 @@ h2, h3, h4 {
 }
 
 .quickPres div:nth-child(2) {
-    border-left: 1px solid var(--white);
-    border-right: 1px solid var(--white);
+    border-left: 1px solid var(--white-sepa);
+    border-right: 1px solid var(--white-sepa);
     padding-inline: 1.5em;
 }
 
@@ -156,7 +160,9 @@ h2, h3, h4 {
 
 .skills {
     position:relative;
-    background: var(--bg-gradient);
+    background-image: var(--fd);
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 70lvh;
 
 }
@@ -216,7 +222,9 @@ h2, h3, h4 {
 }
 
 .project-glass {
-        background: var(--bg-gradient);
+        background-image: var(--fd);
+        background-size: cover;
+        background-repeat: no-repeat;
         border-radius: 1em;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         border: 1px solid var(--border-card);
@@ -228,9 +236,9 @@ h2, h3, h4 {
 }
 
 .chip-project {
-    font-family: "Source Code Pro", serif;
-    font-style: italic;
+    font-variant: all-small-caps;
     font-size: 1.05em;
+    background: var(--bg-gradient)
 }
 
 .btn-project a, .btn-top{

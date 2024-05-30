@@ -4,7 +4,7 @@ export default function About() {
     const about = {
         picture: "/portrait.png",
         title: "A propos de moi",
-        content: "Lorem ipsum odor amet, consectetuer adipiscing elit. Efficitur imperdiet venenatis facilisi hac dapibus vivamus etiam placerat. Nisi habitant eros finibus orci maximus leo dolor dis primis."
+        content: "Designeuse pour de nombreuses communautés en ligne durant plus de dix ans, je suis depuis devenue développeuse web front-end. De mes appétences en graphisme à mes compétences en développement, je suis en mesure d'élaborer des applications web, de leur maquette jusqu'au déploiement.   "
     }
 
     return (

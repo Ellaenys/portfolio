@@ -19,50 +19,7 @@ const config: Config = {
         lg:'2rem'
       }
     },
-    extend: {
-      animation: {
-        first: "moveVertical 30s ease infinite",
-        second: "moveInCircle 20s reverse infinite",
-        third: "moveInCircle 40s linear infinite",
-        fourth: "moveHorizontal 40s ease infinite",
-        fifth: "moveInCircle 20s ease infinite",
-      },
-      keyframes: {
-        moveHorizontal: {
-          "0%": {
-            transform: "translateX(-50%) translateY(-10%)",
-          },
-          "50%": {
-            transform: "translateX(50%) translateY(10%)",
-          },
-          "100%": {
-            transform: "translateX(-50%) translateY(-10%)",
-          },
-        },
-        moveInCircle: {
-          "0%": {
-            transform: "rotate(0deg)",
-          },
-          "50%": {
-            transform: "rotate(180deg)",
-          },
-          "100%": {
-            transform: "rotate(360deg)",
-          },
-        },
-        moveVertical: {
-          "0%": {
-            transform: "translateY(-50%)",
-          },
-          "50%": {
-            transform: "translateY(50%)",
-          },
-          "100%": {
-            transform: "translateY(-50%)",
-          },
-        },
-      },
-    },
+    extend: {},
   },
   darkMode: "class",
   plugins: [nextui({
@@ -72,7 +29,7 @@ const config: Config = {
           background:"#070707FF",
           foreground: "#c5c2c2",
           primary: {
-            DEFAULT: "#40183AFF",
+            DEFAULT: "#40183AB2",
             50: '#2d1129',
             100: '#40183a',
             200: '#65265c',
@@ -85,7 +42,7 @@ const config: Config = {
             900: '#f8edf7',
           },
           secondary: {
-            DEFAULT: "#7C3106FF",
+            DEFAULT: "#7C31067F",
             50: '#240e02',
             100: '#5f2505',
             200: '#7c3106',
