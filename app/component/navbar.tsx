@@ -31,11 +31,11 @@ export default function Navigation() {
     ]
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} height={4} maxWidth={"full"} isBlurred={false} className={"bg-transparent navbar-font"}>
+        <Navbar onMenuOpenChange={setIsMenuOpen} height={4} maxWidth={"full"} isBlurred={false} className={"bg-transparent navbar-font z-50"}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    className="sm:hidden"
+                    className="sm:hidden glass p-5"
                 />
 
                 <NavbarContent className="hidden sm:flex gap-4 my-4" justify="start">

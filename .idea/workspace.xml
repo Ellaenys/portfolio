@@ -39,6 +39,8 @@
       <change beforePath="$PROJECT_DIR$/../app/globals.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/layout.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/component/navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next.config.mjs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
@@ -108,6 +110,8 @@
       <workItem from="1716883820413" duration="20287000" />
       <workItem from="1716978631410" duration="9539000" />
       <workItem from="1717055378021" duration="11278000" />
+      <workItem from="1717068960790" duration="486000" />
+      <workItem from="1717069549175" duration="297000" />
     </task>
     <servers />
   </component>
