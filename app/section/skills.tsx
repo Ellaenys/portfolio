@@ -1,9 +1,6 @@
 import { CardSkills} from "@/app/component/card-skills";
-import {BackgroundBeams} from "@/app/component/background-beams";
 import React from "react";
-import {
-    HeroHighlight
-} from "@/app/component/hero-hightlight";
+import {HeroHighlight} from "@/app/component/hero-hightlight";
 
 export default function Skills() {
 
@@ -78,7 +75,7 @@ export default function Skills() {
             <article
                 className={"m-auto px-3 md:w-1/2 text-right pt-10"}>
                 <h3 className="font-bold text-foreground/70 text-medium">{intro.subtitle}</h3>
-                <h1 className="text-2xl font-bold">{intro.title}</h1>
+                <h1 className="text-3xl font-bold">{intro.title}</h1>
                 <p className={"pt-8"}>{intro.content}</p>
             </article>
             <article

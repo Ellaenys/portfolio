@@ -2,10 +2,7 @@ import React from "react";
 import {faCode, faCubes, faPalette,} from "@fortawesome/free-solid-svg-icons";
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {BackgroundBeams} from "@/app/component/background-beams";
-import {
-    HeroHighlight
-} from "@/app/component/hero-hightlight";
+import {HeroHighlight} from "@/app/component/hero-hightlight";
 
 
 export default function Header() {

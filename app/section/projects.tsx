@@ -1,19 +1,9 @@
 "use client";
 import React from "react";
-import {
-    Accordion,
-    AccordionItem,
-    Card,
-    Image
-} from "@nextui-org/react";
-import { WobbleCard } from "@/app/component/wobble-card";
+import {Accordion, AccordionItem, Image} from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHashtag} from "@fortawesome/free-solid-svg-icons";
 import {Badge, Chip, Button, Link} from "@nextui-org/react";
-import {BackgroundBeams} from "@/app/component/background-beams";
-import {
-    HeroHighlight
-} from "@/app/component/hero-hightlight";
 
 export default function Projects() {
 
@@ -104,7 +94,7 @@ export default function Projects() {
             <article
                 className={"m-auto pt-10 md:pt-28 px-3 mb-5 md:w-1/2 intro-projects"}>
                 <h3 className="font-bold text-foreground/70 text-medium">{intro.subtitle}</h3>
-                <h1 className="text-2xl font-bold">{intro.title}</h1>
+                <h1 className="text-3xl font-bold">{intro.title}</h1>
                 <p className={"md:py-8 pb-8 pt-3 mt-4 md:mt-0"}>{intro.content}</p>
             </article>
 

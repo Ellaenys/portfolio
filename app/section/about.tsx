@@ -17,12 +17,12 @@ export default function About() {
     return (
 
         <section>
-            <div className={"about flex flex-wrap gap-10 md:justify-center md:items-center container my-10 w-4/5"} id={"about"}>
+            <div className={"about flex flex-wrap gap-10 md:justify-center md:items-center container my-10 md:w-1/2"} id={"about"}>
 
                 <article
                     className={"m-auto px-3 md:w-1/2"}>
                     <h3 className="font-bold text-foreground/70 text-medium">{about.subtitle}</h3>
-                    <h1 className="text-2xl font-bold">{about.title}</h1>
+                    <h1 className="text-3xl font-bold">{about.title}</h1>
                     <p className={"md:py-8 pb-8 pt-3 mt-4 md:mt-0"}>{about.content}</p>
                     <div
                         className={"flex justify-start btn-project"}>
