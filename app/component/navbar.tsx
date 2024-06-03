@@ -26,7 +26,7 @@ export default function Navigation() {
         {
             link: "#projects",
             icon: faFireFlameCurved,
-            item:"Projets",
+            item:"Portfolio",
         }
     ]
 

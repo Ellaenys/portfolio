@@ -1,11 +1,15 @@
 import { CardSkills} from "@/app/component/card-skills";
 import {BackgroundBeams} from "@/app/component/background-beams";
 import React from "react";
+import {
+    HeroHighlight
+} from "@/app/component/hero-hightlight";
 
 export default function Skills() {
 
     const intro = {
         title: "Mes compétences",
+        subtitle: "Mon savoir et mes savoirs-faire",
         content: "Principalement orientée graphisme et développement front-end, j'ai également des compétences en back-end me permettant d'appréhender toute conception d'application web de manière éclairée."
     }
 
@@ -68,17 +72,21 @@ export default function Skills() {
 
 
     return (
-        <section className={"skills pb-10"}
-                 id={"skills"}>
-                <article
-                    className={"m-auto pt-12 md:pt-28 px-3 md:w-1/2 text-right"}>
-                    <h4 className={"font-bold text-4xl"}>{intro.title}</h4>
-                    <p className={"md:p-2 pb-2 pt-3"}>{intro.content}</p>
-                </article>
-                <article className={"container md:w-1/2"}>
-                    <CardSkills items={skills}/>
-                </article>
-            <BackgroundBeams />
+        <section id={"skills"} className={"skills"}>
+            <HeroHighlight>
+                <div className={"flex flex-col justify-center items-center"}>
+            <article
+                className={"m-auto px-3 md:w-1/2 text-right pt-10"}>
+                <h3 className="font-bold text-foreground/70 text-medium">{intro.subtitle}</h3>
+                <h1 className="text-2xl font-bold">{intro.title}</h1>
+                <p className={"pt-8"}>{intro.content}</p>
+            </article>
+            <article
+                className={"container md:w-2/3"}>
+                <CardSkills items={skills}/>
+            </article>
+                </div>
+            </HeroHighlight>
         </section>
     );
 }

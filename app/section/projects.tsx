@@ -1,16 +1,25 @@
 "use client";
 import React from "react";
-import { Accordion, AccordionItem, Image } from "@nextui-org/react";
+import {
+    Accordion,
+    AccordionItem,
+    Card,
+    Image
+} from "@nextui-org/react";
 import { WobbleCard } from "@/app/component/wobble-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHashtag} from "@fortawesome/free-solid-svg-icons";
 import {Badge, Chip, Button, Link} from "@nextui-org/react";
 import {BackgroundBeams} from "@/app/component/background-beams";
+import {
+    HeroHighlight
+} from "@/app/component/hero-hightlight";
 
 export default function Projects() {
 
     const intro = {
-        title: "Mes projets",
+        title: "Mon portfolio",
+        subtitle: "Mes réalisations et mes projets",
         content: "Titulaire de deux titres professionnels, mes apprentissages mêlés à mes expériences m'ont permis d'élaborer et de collaborer dans le cadre de projets divers.      "
     };
 
@@ -93,17 +102,19 @@ export default function Projects() {
         <section className={"projects"} id={"projects"}>
 
             <article
-                className={"m-auto pt-20 md:pt-20 px-3 mb-5 md:w-1/2"}>
-                <h4 className={"font-bold text-4xl"}>{intro.title}</h4>
-                <p className={"md:p-7 pb-8 pt-3"}>{intro.content}</p>
+                className={"m-auto pt-10 md:pt-28 px-3 mb-5 md:w-1/2 intro-projects"}>
+                <h3 className="font-bold text-foreground/70 text-medium">{intro.subtitle}</h3>
+                <h1 className="text-2xl font-bold">{intro.title}</h1>
+                <p className={"md:py-8 pb-8 pt-3 mt-4 md:mt-0"}>{intro.content}</p>
             </article>
 
-            <article className={"m-auto container md:w-1/2"}>
+            <article
+                className={"m-auto container md:w-1/2 "} >
                 <Accordion variant={"splitted"}>
                     {items.map((item, idx) => (
-                    <AccordionItem
-                        key={idx}
-                        className={"project accordeon-project glass"}
+                        <AccordionItem
+                            key={idx}
+                            className={"accordeon-project my-1"}
                         aria-label={item.title}
                         subtitle={<div
                             className="flex gap-2 flex-wrap mt-3 ml-3">
@@ -113,6 +124,7 @@ export default function Projects() {
                                         ) => (
                                 <Chip key={index}
                                       size="sm"
+                                      radius={"sm"}
                                       className="chip-project text-foreground/70 hover:text-foreground"
                                       startContent={<FontAwesomeIcon icon={faHashtag} className={"text-foreground/70 hover:text-foreground mx-1"}/>}
                                       variant="solid"
@@ -131,22 +143,20 @@ export default function Projects() {
                     >
                         <div
                             className={"overflow-x-clip py-2"}>
-                            <WobbleCard>
                             <div className="flex items-center flex-col md:flex-row gap-5 p-3">
                                         <Image
                                             isZoomed={true}
                                             alt={item.title}
                                             className="object-cover md:max-w-[200px] md:min-w-[200px]"
                                             height="100%"
-                                            shadow="lg"
                                             src={item.img}
                                             width="100%"
 
                                         />
-                                            <div className="flex flex-col md:shrink md:p-2">
+                                            <div className="flex flex-col md:shrink md:p-2 title-project">
                                                 <h3 className="font-bold text-foreground/70 text-medium">{item.badge === "à venir" ? "Projet en réflexion en" : "Réalisé en" } {item.tags[0]}</h3>
                                                 <h1 className="text-2xl font-bold">{item.name}</h1>
-                                                <p className="px-1 py-2 mt-2 pl-3">{item.description}</p>
+                                                <p className="px-1 py-2 mt-5">{item.description}</p>
                                                 <div className={item.link === "" ? "hidden" : "flex justify-end mt-3 btn-project"}>
                                                     <Button
                                                     href={item.link}
@@ -160,11 +170,9 @@ export default function Projects() {
                                                         {item.contentLink}
 
                                                 </Button>
-                                                    <BackgroundBeams className={"-z-10"}/>
                                                 </div>
                                             </div>
                                 </div>
-                        </WobbleCard>
                     </div>
                     </AccordionItem>
                 ))}

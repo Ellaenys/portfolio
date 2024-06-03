@@ -31,12 +31,8 @@
     --alt-border: rgb(124,49,6,0.2);
     --border-card: rgba(145, 140, 140, 0.05);
     --card:rgb(7,7,7,0.5);
-    --scroll:rgb(7,7,7,0.8);
 
     --jura: "Jura", sans-serif;
-
-    --fd: url('/fond.png');
-    --fd2: url('/fond2.png');
 
 
     ::-webkit-scrollbar {
@@ -48,7 +44,7 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        background: var(--scroll);
+        background: var(--bg);
         border-radius: 0.2em;
     }
 
@@ -61,23 +57,9 @@ html {
 .header {
     position:relative;
     min-height: 70lvh;
-    background-image: var(--fd);
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-top: -22lvh;
     opacity: 0.7;
 }
-
-/*.header:after{*/
-/*    content:"";*/
-/*    position:absolute;*/
-/*    width: 100%;*/
-/*    height: 25%;*/
-/*    left:0;*/
-/*    bottom:-0.2em;*/
-/*    background: var(--black);*/
-/*    clip-path: polygon(100% 100%, 0% 100% , 0.00% 93.33%, 2.00% 93.18%, 4.00% 92.73%, 6.00% 92.01%, 8.00% 91.08%, 10.00% 89.99%, 12.00% 88.83%, 14.00% 87.68%, 16.00% 86.60%, 18.00% 85.69%, 20.00% 84.99%, 22.00% 84.57%, 24.00% 84.45%, 26.00% 84.63%, 28.00% 85.11%, 30.00% 85.85%, 32.00% 86.80%, 34.00% 87.89%, 36.00% 89.06%, 38.00% 90.21%, 40.00% 91.27%, 42.00% 92.17%, 44.00% 92.84%, 46.00% 93.23%, 48.00% 93.33%, 50.00% 93.12%, 52.00% 92.61%, 54.00% 91.85%, 56.00% 90.88%, 58.00% 89.78%, 60.00% 88.61%, 62.00% 87.46%, 64.00% 86.41%, 66.00% 85.54%, 68.00% 84.89%, 70.00% 84.52%, 72.00% 84.46%, 74.00% 84.70%, 76.00% 85.23%, 78.00% 86.01%, 80.00% 87.00%, 82.00% 88.11%, 84.00% 89.28%, 86.00% 90.42%, 88.00% 91.46%, 90.00% 92.31%, 92.00% 92.93%, 94.00% 93.27%, 96.00% 93.31%, 98.00% 93.04%, 100.00% 92.48%);*/
-/*}*/
 
 header:before{
     content:"";
@@ -149,56 +131,37 @@ h2, h3, h4 {
     padding-inline: 1.5em;
 }
 
-.about p {
-    border-bottom: 7px solid transparent;
-    border-image: var(--gradient-card);
-    border-image-slice: 1;
+.about h1, .intro-projects h1 {
+    position: relative;
 }
 
-.portrait {
-    z-index: 21;
+.about h1:after, .intro-projects h1:after {
+    content:"";
+    position: absolute;
+    bottom: -0.5em;
+    left:0;
+    width: 3em;
+    height: 4px;
+    background: var(--gradient);
 }
 
-.skills {
-    position:relative;
-    background-image: var(--fd2);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 70lvh;
+.skills h1 {
+    position: relative;
+}
 
+.skills h1:after {
+    content:"";
+    position: absolute;
+    bottom: -0.5em;
+    right:0;
+    width: 3em;
+    height: 4px;
+    background: var(--gradient);
 }
 
 .ico-skill img {
     padding: 0.3em;
 }
-
-.wave-about {
-    position: relative
-}
-
-/*.about:after{*/
-/*    content:"";*/
-/*    position:absolute;*/
-/*    width: 100%;*/
-/*    height: 20%;*/
-/*    left:0;*/
-/*    bottom:-10lvh;*/
-/*    background: var(--black);*/
-/*    z-index: 20;*/
-/*    clip-path: polygon(100% 0%, 0% 0% , 0.00% 93.33%, 2.00% 93.18%, 4.00% 92.73%, 6.00% 92.01%, 8.00% 91.08%, 10.00% 89.99%, 12.00% 88.83%, 14.00% 87.68%, 16.00% 86.60%, 18.00% 85.69%, 20.00% 84.99%, 22.00% 84.57%, 24.00% 84.45%, 26.00% 84.63%, 28.00% 85.11%, 30.00% 85.85%, 32.00% 86.80%, 34.00% 87.89%, 36.00% 89.06%, 38.00% 90.21%, 40.00% 91.27%, 42.00% 92.17%, 44.00% 92.84%, 46.00% 93.23%, 48.00% 93.33%, 50.00% 93.12%, 52.00% 92.61%, 54.00% 91.85%, 56.00% 90.88%, 58.00% 89.78%, 60.00% 88.61%, 62.00% 87.46%, 64.00% 86.41%, 66.00% 85.54%, 68.00% 84.89%, 70.00% 84.52%, 72.00% 84.46%, 74.00% 84.70%, 76.00% 85.23%, 78.00% 86.01%, 80.00% 87.00%, 82.00% 88.11%, 84.00% 89.28%, 86.00% 90.42%, 88.00% 91.46%, 90.00% 92.31%, 92.00% 92.93%, 94.00% 93.27%, 96.00% 93.31%, 98.00% 93.04%, 100.00% 92.48%);*/
-/*}*/
-
-/*.skills:after{*/
-/*    content:"";*/
-/*    position:absolute;*/
-/*    width: 100%;*/
-/*    height: 25%;*/
-/*    left:0;*/
-/*    bottom:-0.5em;*/
-/*    background: var(--black);*/
-/*    z-index:20;*/
-/*    clip-path: polygon(100% 100%, 0% 100% , 0.00% 93.33%, 2.00% 93.18%, 4.00% 92.73%, 6.00% 92.01%, 8.00% 91.08%, 10.00% 89.99%, 12.00% 88.83%, 14.00% 87.68%, 16.00% 86.60%, 18.00% 85.69%, 20.00% 84.99%, 22.00% 84.57%, 24.00% 84.45%, 26.00% 84.63%, 28.00% 85.11%, 30.00% 85.85%, 32.00% 86.80%, 34.00% 87.89%, 36.00% 89.06%, 38.00% 90.21%, 40.00% 91.27%, 42.00% 92.17%, 44.00% 92.84%, 46.00% 93.23%, 48.00% 93.33%, 50.00% 93.12%, 52.00% 92.61%, 54.00% 91.85%, 56.00% 90.88%, 58.00% 89.78%, 60.00% 88.61%, 62.00% 87.46%, 64.00% 86.41%, 66.00% 85.54%, 68.00% 84.89%, 70.00% 84.52%, 72.00% 84.46%, 74.00% 84.70%, 76.00% 85.23%, 78.00% 86.01%, 80.00% 87.00%, 82.00% 88.11%, 84.00% 89.28%, 86.00% 90.42%, 88.00% 91.46%, 90.00% 92.31%, 92.00% 92.93%, 94.00% 93.27%, 96.00% 93.31%, 98.00% 93.04%, 100.00% 92.48%);*/
-/*}*/
 
 .glass {
     background: var(--card);
@@ -223,9 +186,6 @@ h2, h3, h4 {
 }
 
 .project-glass {
-        background-image: var(--fd2);
-        background-size: cover;
-        background-repeat: no-repeat;
         border-radius: 1em;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         border: 1px solid var(--border-card);
@@ -251,6 +211,21 @@ h2, h3, h4 {
     background: var(--bg) !important;
     padding: 1em;
     border-radius: 1em;
+}
+
+.title-project h1 {
+    position: relative;
+}
+
+
+.title-project h1:after {
+    content:"";
+    position: absolute;
+    bottom: -0.5em;
+    left:0;
+    width: 3em;
+    height: 4px;
+    background: var(--gradient);
 }
 
 .footer {

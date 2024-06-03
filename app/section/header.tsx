@@ -3,6 +3,9 @@ import {faCode, faCubes, faPalette,} from "@fortawesome/free-solid-svg-icons";
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {BackgroundBeams} from "@/app/component/background-beams";
+import {
+    HeroHighlight
+} from "@/app/component/hero-hightlight";
 
 
 export default function Header() {
@@ -27,7 +30,7 @@ export default function Header() {
     return (
 
         <section className={"header flex flex-col justify-center items-center"} id={"up"}>
-
+            <HeroHighlight>
             <div className={"px-2 md:px-0 md:mt-48 mt-44"}>
                 <h1 className={"font-extrabold text-7xl text-center"}>Ashry
                     Laetitia *</h1>
@@ -43,7 +46,7 @@ export default function Header() {
                     </div>
                 ))}
             </article>
-            <BackgroundBeams />
+            </HeroHighlight>
 
         </section>
     );
