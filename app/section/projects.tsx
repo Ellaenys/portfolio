@@ -99,11 +99,11 @@ export default function Projects() {
             </article>
 
             <article className={"m-auto container md:w-1/2"}>
-                <Accordion selectionMode="multiple">
+                <Accordion variant={"splitted"}>
                     {items.map((item, idx) => (
                     <AccordionItem
                         key={idx}
-                        className={"project"}
+                        className={"project accordeon-project glass"}
                         aria-label={item.title}
                         subtitle={<div
                             className="flex gap-2 flex-wrap mt-3 ml-3">
@@ -130,7 +130,7 @@ export default function Projects() {
                     }
                     >
                         <div
-                            className={"overflow-x-clip p-5"}>
+                            className={"overflow-x-clip py-2"}>
                             <WobbleCard>
                             <div className="flex items-center flex-col md:flex-row gap-5 p-3">
                                         <Image

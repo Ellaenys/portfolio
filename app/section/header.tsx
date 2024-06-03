@@ -38,8 +38,8 @@ export default function Header() {
             <article className={"flex md:gap-8 gap-3 justify-center pb-14 md:mt-24 mt-20 z-20 quickPres"}>
                 {quickPres.map((item, index) => (
                     <div key={`${index}`} className={"flex flex-col gap-2 md:gap-5"}>
-                            <FontAwesomeIcon icon={item.icon} className={"mr-2 text-foreground/70 text-2xl"} />
-                        <h3 className={"text-lg font-bold text-foreground"}>{item.name}</h3>
+                            <FontAwesomeIcon icon={item.icon} className={"mr-2 text-foreground/90 text-2xl"} />
+                        <h3 className={"text-lg font-bold text-foreground/90"}>{item.name}</h3>
                     </div>
                 ))}
             </article>
