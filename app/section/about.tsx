@@ -56,7 +56,7 @@ export default function About() {
 
                     <Image
                         alt={"portrait"}
-                        className="object-cover md:max-w-[180px] md:block md:min-w-[180px] hidden portrait"
+                        className="object-cover md:max-w-[180px] md:block md:min-w-[180px] hidden portrait-delay"
                         height="100%"
                         src={about.picture2}
                         width="100%"
@@ -65,7 +65,7 @@ export default function About() {
 
                     <Image
                         alt={"portrait"}
-                        className="object-cover md:max-w-[150px] md:min-w-[150px] portrait row-start-2"
+                        className="object-cover md:max-w-[150px] md:min-w-[150px] portrait-delay row-start-2"
                         height="100%"
                         src={about.picture3}
                         width="100%"

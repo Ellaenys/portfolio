@@ -252,6 +252,11 @@ footer:after{
     animation: slide-top 5s ease-in-out infinite both;
 }
 
+.portrait-delay {
+    -webkit-animation: slide-top 5s ease-in-out 0.5s infinite both;
+    animation: slide-top 5s ease-in-out 0.5s infinite both;
+}
+
 
 @-webkit-keyframes slide-top {
     0% {
