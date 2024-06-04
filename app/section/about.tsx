@@ -23,7 +23,7 @@ export default function About() {
             <div className={"about flex flex-wrap gap-2 md:justify-center md:items-center container my-5 md:w-2/3"} id={"about"}>
 
                 <article
-                    className={"m-auto px-3 md:w-1/2"}>
+                    className={"m-auto px-3 md:w-1/2 order-last md:order-first"}>
                     <h3 className="font-bold text-foreground/70 text-medium">{about.subtitle}</h3>
                     <h1 className="text-3xl font-bold">{about.title}</h1>
                     <p className={"md:py-8 pb-8 pt-3 mt-4 md:mt-0"}>{about.content}</p>
