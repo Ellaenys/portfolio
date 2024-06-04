@@ -7,7 +7,7 @@
 :root {
 
     --black: rgb(7,7,7,1);
-    --white: rgb(220, 213, 213);
+    --white: rgb(203, 189, 189);
     --violet: rgb(64,24,58,1);
     --sand: rgb(124,49,6,1);
 
@@ -56,9 +56,6 @@ html {
 
 .header {
     position:relative;
-    min-height: 70lvh;
-    margin-top: -22lvh;
-    opacity: 0.7;
 }
 
 header:before{
