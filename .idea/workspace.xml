@@ -32,6 +32,7 @@
       <change afterPath="$PROJECT_DIR$/../img/pexels-sliceisop-14264289.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../img/pexels-tatiana-tat-721210574-18311598.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../img/portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cezam.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.eslintrc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
@@ -40,12 +41,8 @@
       <change beforePath="$PROJECT_DIR$/../app/layout.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/page.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/component/background-beams.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/component/wobble-card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/section/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/section/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/section/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/section/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/section/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/section/projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/section/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/section/skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/cv.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/cv.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next.config.mjs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
@@ -122,7 +119,8 @@
       <workItem from="1717089200909" duration="1458000" />
       <workItem from="1717150975220" duration="765000" />
       <workItem from="1717425098370" duration="3288000" />
-      <workItem from="1717429332710" duration="10714000" />
+      <workItem from="1717429332710" duration="10994000" />
+      <workItem from="1717492740625" duration="999000" />
     </task>
     <servers />
   </component>

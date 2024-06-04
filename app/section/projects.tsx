@@ -16,14 +16,24 @@ export default function Projects() {
 
     const items = [
         {
+            title: "Maquettage des pages d'une application web",
+            tags: ["2022", "stage", "maquette", "design", "figma"],
+            description: "Lors de mon stage de formation DWWM au sein de CEZAM - le réseau de coopération entre CSE -, j'ai participé au projet d'extension de l'application web en effectuant la maquette des nouvelles pages. Les pages sont aujourd'hui en ligne.",
+            link: "https://www.figma.com/design/Ycql2hpMfNJ14L5a1N33X1/CEZAM?node-id=0-1&t=CYBqB5AFV2Ntn0TU-1",
+            contentLink: "Découvrir la maquette",
+            img: "/cezam.png",
+            name: "CEZAM",
+            badge: "en ligne",
+        },
+        {
             title: "Conception d'un forum orienté jeu de rôle textuel",
             tags: ["2022 - 2023", "forum", "identité visuelle", "design", "symfony", "css", "html", "js", "figma", "photoshop"],
-            description: "Projet de développement réalisé dans le cadre de la préparation du titre professionnel de développeuse web et web mobile. Sa première version comprend un forum ainsi que son interface administrateur.",
+            description: "Projet de développement réalisé dans le cadre de la préparation du titre professionnel de développeuse web et web mobile. Sa première version comprends un forum ainsi que son interface administrateur.",
             link: "/aether-video.mp4",
             contentLink: "Découvrir en vidéo",
             img: "/aether.png",
             name: "Aether",
-            badge: "terminé",
+            badge: "réalisé",
         },
         {
             title: "Identité visuelle et design de forum",
@@ -33,7 +43,7 @@ export default function Projects() {
             contentLink: "Aperçu du forum",
             img: "/sop.gif",
             name: "Spring of power",
-            badge: "terminé",
+            badge: "en ligne",
         },
         {
             title: "Plateforme de gestion de chantier pour particulier",
@@ -43,7 +53,7 @@ export default function Projects() {
             contentLink: "Visiter",
             img: "/chappy.png",
             name: "Chappy",
-            badge: "terminé",
+            badge: "en ligne",
         },
         {
             title: "Portfolio pour développeur web",
@@ -53,7 +63,7 @@ export default function Projects() {
             contentLink: "Visiter",
             img: "/mathieu.png",
             name: "Portfolio de Mathieu Bourkel",
-            badge: "terminé",
+            badge: "en ligne",
         },
         {
             title: "Portfolio personnel",
@@ -63,7 +73,7 @@ export default function Projects() {
             contentLink: "rien",
             img: "/portfolio.png",
             name: "Mon portfolio",
-            badge: "terminé",
+            badge: "en ligne",
         },
         {
             title: "Application de carnets pour écrivain",
@@ -126,7 +136,7 @@ export default function Projects() {
                         title={
                         <span className={"txt-project"}>
                             {item.title}
-                            <Badge content={item.badge} color={item.badge === "terminé" ? "primary" : "secondary"} size="sm" placement="top-right" className={"ml-16"}> <span className={"px-3 py-2"}></span> </Badge>
+                            <Badge content={item.badge} color={item.badge === "à venir" ? "secondary" : "primary"} size="sm" placement="top-right" className={"ml-16"}> <span className={"px-3 py-2"}></span> </Badge>
                         </span>
 
                     }
