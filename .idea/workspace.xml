@@ -32,6 +32,10 @@
       <change afterPath="$PROJECT_DIR$/../img/pexels-sliceisop-14264289.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../img/pexels-tatiana-tat-721210574-18311598.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../img/portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pmidorange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pmidviolet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/porange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pviolet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.eslintrc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
@@ -39,8 +43,9 @@
       <change beforePath="$PROJECT_DIR$/../app/globals.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/layout.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/component/dropdownContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/component/dropdownContact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/section/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/section/about.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next.config.mjs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
@@ -119,7 +124,7 @@
       <workItem from="1717425098370" duration="3288000" />
       <workItem from="1717429332710" duration="10994000" />
       <workItem from="1717492740625" duration="1330000" />
-      <workItem from="1717494122384" duration="1874000" />
+      <workItem from="1717494122384" duration="5582000" />
     </task>
     <servers />
   </component>

@@ -7,7 +7,10 @@ import React from "react";
 export default function About() {
 
     const about = {
-        picture: "/portrait.png",
+        picture1: "/porange.png",
+        picture2: "/pmidorange.png",
+        picture3: "/pmidviolet.png",
+        picture4: "/pviolet.png",
         title: "A propos de moi",
         subtitle: "Une petite présentation",
         cv: "/cv.pdf",
@@ -17,7 +20,7 @@ export default function About() {
     return (
 
         <section>
-            <div className={"about flex flex-wrap gap-10 md:justify-center md:items-center container my-10 md:w-2/3"} id={"about"}>
+            <div className={"about flex flex-wrap gap-2 md:justify-center md:items-center container my-5 md:w-2/3"} id={"about"}>
 
                 <article
                     className={"m-auto px-3 md:w-1/2"}>
@@ -40,12 +43,42 @@ export default function About() {
                         </Button>
                     </div>
                 </article>
-                <aside>
+                <aside className={"grid md:grid-cols-2 grid-rows-2 gap-4 md:w-1/3 md:place-items-center"}>
+
                     <Image
-                        width={400}
-                        alt="Portrait"
-                        src={about.picture}
-                        className={"portrait"}
+                        alt={"portrait"}
+                        className="object-cover hidden md:block md:max-w-[100px] md:min-w-[100px] portrait"
+                        height="100%"
+                        src={about.picture1}
+                        width="100%"
+
+                    />
+
+                    <Image
+                        alt={"portrait"}
+                        className="object-cover md:max-w-[180px] md:block md:min-w-[180px] hidden portrait"
+                        height="100%"
+                        src={about.picture2}
+                        width="100%"
+
+                    />
+
+                    <Image
+                        alt={"portrait"}
+                        className="object-cover md:max-w-[150px] md:min-w-[150px] portrait row-start-2"
+                        height="100%"
+                        src={about.picture3}
+                        width="100%"
+
+                    />
+
+                    <Image
+                        alt={"portrait"}
+                        className="object-cover md:max-w-[110px] md:block md:min-w-[110px] hidden portrait row-start-2"
+                        height="100%"
+                        src={about.picture4}
+                        width="100%"
+
                     />
                 </aside>
 
