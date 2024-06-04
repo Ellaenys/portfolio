@@ -42,7 +42,7 @@ export default function Navigation() {
                     {menuItems.map((item, index) => (
                         <NavbarItem key={`${index}`} >
                             <Link color="foreground" href={item.link} className={"text-sm text-foreground"} isBlock >
-                                <FontAwesomeIcon icon={item.icon} className={"mr-2 text-foreground/70"} /> {item.item}
+                                <FontAwesomeIcon icon={item.icon} className={"mr-2 ico-nav"} /> {item.item}
                             </Link>
                         </NavbarItem>
                     ))}
@@ -59,7 +59,7 @@ export default function Navigation() {
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
                         <Link color="foreground" href={item.link} className={"text-sm navbar-font"} isBlock >
-                            <FontAwesomeIcon icon={item.icon} className={"mr-2 text-secondary-100"} /> {item.item}
+                            <FontAwesomeIcon icon={item.icon} className={"mr-2 ico-nav"} /> {item.item}
                         </Link>
                     </NavbarMenuItem>
                 ))}

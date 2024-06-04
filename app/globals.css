@@ -99,6 +99,10 @@ h2, h3, h4 {
 
 }
 
+.ico-nav {
+    color: var(--gr-sand);
+}
+
 .contact {
     padding-left: 2em;
 }
