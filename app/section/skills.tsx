@@ -32,7 +32,7 @@ export default function Skills() {
         {
             name: "React",
             description:
-                "Maitrisé depuis 1 ans, React a été la suite logique dans ma courbe d'exploration des langages orientés front-end suite à une première pratique de Javascript et de Typescript. Aujourd'hui, j'utilise le framework Next.js.",
+                "Maitrisé depuis 1 an, React a été la suite logique dans ma courbe d'exploration des langages orientés front-end suite à une première pratique de Javascript et de Typescript. Aujourd'hui, j'utilise le framework Next.js.",
             icon: "/react.svg",
         },
         {
