@@ -76,6 +76,16 @@ export default function Projects() {
             badge: "en ligne",
         },
         {
+            title: "Elaboration de modèles de portfolio",
+            tags: ["2024", "en cours" , "projet", "conception", "maquette" ],
+            description: "Projet en cours de développement.",
+            link:"",
+            contentLink: "rien",
+            img: "/soon.png",
+            name: "Elaboration de modèles de portfolio",
+            badge: "à venir",
+        },
+        {
             title: "Application de carnets pour écrivain",
             tags: ["2024" ,"à venir" , "projet", "personnel" ],
             description: "Projet d'espaces de réflexion, d'écriture et de partage pour auteurs.",
@@ -83,16 +93,6 @@ export default function Projects() {
             contentLink: "rien",
             img: "/soon.png",
             name: "Cosima",
-            badge: "à venir",
-        },
-        {
-            title: "Générateur d'infrastructure pour développeurs web",
-            tags: ["2024", "à venir" , "projet", "collaboration" ],
-            description: "Projet à venir, en collaboration.",
-            link:"",
-            contentLink: "rien",
-            img: "/soon.png",
-            name: "Nom à venir",
             badge: "à venir",
         }
 

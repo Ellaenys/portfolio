@@ -24,10 +24,16 @@ export default function Skills() {
             icon: "/figma.svg",
         },
         {
-            name: "Html / Css",
+            name: "Html",
             description:
-                "Maitrisés tout deux depuis près de dix ans, je veille tout d'abord à toujours mettre en pratique l'HTML sémantique dans mes applications ; ensuite, j'ai autant de connaissances poussées concernant le CSS que ses préprocesseurs, notamment Sass.",
-            icon: "/htmlcss.svg",
+                "Maitrisés depuis près de dix ans, je veille à toujours mettre en pratique l'HTML sémantique dans mes applications.",
+            icon: "/html.svg",
+        },
+        {
+            name: "CSS",
+            description:
+                "A l'instar de l'HTML 5, j'ai autant de connaissances poussées concernant le CSS 3 que ses préprocesseurs, notamment Sass. J'ai également eu l'occasion d'élaborer des projets en utilisant autant Bootstrap que Tailwind.",
+            icon: "/css.svg",
         },
         {
             name: "React",
@@ -40,12 +46,6 @@ export default function Skills() {
             description:
                 "Maitrisé depuis 3 ans, Symfony a été mon premier framework back-end après avoir découvert et pratiqué PHP. Avec lui, j'ai également des connaissances touchant aux bases de données (SQL) et aux ORM (Doctrine).",
             icon: "/symfony.svg",
-        },
-        {
-            name: "Wordpress",
-            description:
-                "A partir de mes connaissances en PHP, j'utilise le CMS afin de créer des thèmes et des applications.",
-            icon: "/wordpress.svg",
         },
         {
             name: "NodeJs",
