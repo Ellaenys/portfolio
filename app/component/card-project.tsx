@@ -142,36 +142,36 @@ export function CardProject() {
                     </div>
                 ) : null}
             </AnimatePresence>
-            <ul className="container mx-auto w-full flex justify-center gap-4 flex-wrap">
+            <div className="mx-auto w-full md:flex md:justify-center md:gap-4 md:flex-wrap">
                 {items.map((card, index) => (
                     <motion.div
-                        layoutId={`card-${card.title}-${id}`}
+                        layoutId={`card-${card.title}-${index}`}
                         key={card.title}
                         onClick={() => setActive(card)}
                         className="p-4 glass-project-hover rounded-xl cursor-pointer"
                     >
-                        <div className="flex gap-4 flex-col w-full md:w-[18em] h-56 project-glass">
+                        <div className="flex gap-4 flex-col h-56 project-glass w-full md:w-[18em]">
                             <motion.div layoutId={`image-${card.title}-${id}`}>
                                 <Image
                                     width={1000}
                                     height={1000}
                                     src={card.img}
                                     alt={card.contentLink}
-                                    className="h-36 w-full  rounded-lg object-cover"
+                                    className="h-36 w-full rounded-lg object-cover"
                                 />
                             </motion.div>
                             <div className="flex justify-start items-start flex-col px-5">
-                                <motion.h2
+                                <motion.h5
                                     layoutId={`description-${card.description}-${id}`}
-                                    className="text-sm font-bold pb-5"
+                                    className="font-bold pb-5"
                                 >
                                     {card.title}
-                                </motion.h2>
+                                </motion.h5>
                             </div>
                         </div>
                     </motion.div>
                 ))}
-            </ul>
+            </div>
         </>
     );
 }

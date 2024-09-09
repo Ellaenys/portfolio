@@ -9,14 +9,14 @@ export default function About() {
 
     return (
 
-        <section>
-            <div className={"about flex flex-wrap md:justify-center md:items-center container my-5 md:w-3/4"} id={"about"}>
+        <section className={"container"}>
+            <div className={"about flex flex-wrap md:flex-nowrap md:items-center my-28 gap-5"} id={"about"}>
 
                 <article
-                    className={"m-auto px-3 md:w-1/2 order-last md:order-first"}>
+                    className={"order-last md:order-first"}>
                     <h3 className="font-bold text-foreground/70 text-medium">{about.subtitle}</h3>
                     <h1 className="text-3xl font-bold">{about.title}</h1>
-                    <p className={"md:py-8 pb-8 pt-3 mt-4 md:mt-0"}>{about.content}</p>
+                    <p className={"md:py-8 pb-8 pt-3 mt-4 md:mt-0 md:1/2"}>{about.content}</p>
                     <div
                         className={"flex justify-start btn-project"}>
                         <Button
@@ -33,7 +33,7 @@ export default function About() {
                         </Button>
                     </div>
                 </article>
-                <aside className={"grid md:grid-cols-2 grid-rows-2 gap-2 md:w-1/3 md:place-items-center"}>
+                <aside className={"grid md:grid-cols-2 grid-rows-2 gap-5 md:w-1/2 md:place-items-center"}>
 
                     <Image
                         alt={"portrait"}

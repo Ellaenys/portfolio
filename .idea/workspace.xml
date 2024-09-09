@@ -32,11 +32,6 @@
       <change afterPath="$PROJECT_DIR$/../img/pexels-sliceisop-14264289.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../img/pexels-tatiana-tat-721210574-18311598.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../img/portrait.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/component/switch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/data/about.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/data/header.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/data/projects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/data/skills.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.eslintrc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
@@ -45,19 +40,10 @@
       <change beforePath="$PROJECT_DIR$/../app/layout.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/page.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/component/card-skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/component/card-skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/component/hero-hightlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/component/hero-hightlight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/component/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/component/navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/providers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/component/card-project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/component/card-project.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/section/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/section/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/section/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/section/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/section/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/section/projects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/section/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/section/skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next.config.mjs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
@@ -151,6 +137,8 @@
       <workItem from="1725356071213" duration="63000" />
       <workItem from="1725356167215" duration="4179000" />
       <workItem from="1725877300337" duration="7082000" />
+      <workItem from="1725890607382" duration="9190000" />
+      <workItem from="1725909431625" duration="4169000" />
     </task>
     <servers />
   </component>
