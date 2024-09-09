@@ -182,6 +182,11 @@ h2, h3, h4 {
     background: var(--gradient-card);
 }
 
+.glass-project-hover:hover {
+    background: var(--gradient-card);
+    opacity: 0.9;
+}
+
 
 .skill span  {
     font-family: "Source Code Pro", serif;
@@ -192,6 +197,7 @@ h2, h3, h4 {
 }
 
 .project-glass {
+    background: var(--bg);
     border-radius: 1em;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-card);
@@ -202,6 +208,7 @@ h2, h3, h4 {
     font-weight: bold;
 }
 
+
 .chip-project {
     font-variant: all-small-caps;
     font-size: 1.05em;
@@ -211,7 +218,29 @@ h2, h3, h4 {
 .btn-project a, .btn-top{
     background: var(--gradient-card);
     box-shadow: 2px 2px 3px rgba(10, 10, 10, 0.72);
+
 }
+.btn-project-alt {
+    background: var(--gradient-card);
+    box-shadow: 2px 2px 3px rgba(10, 10, 10, 0.72);
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+
+.img-project {
+    position: relative;
+}
+
+.badge-project {
+    position:absolute;
+    z-index: 100;
+    margin: 1em;
+    text-transform: capitalize;
+    font-weight: 900;
+    opacity: 1 !important;
+
+}
+
 
 .accordeon-project {
     background: var(--bg) !important;
@@ -232,6 +261,11 @@ h2, h3, h4 {
     width: 3em;
     height: 4px;
     background: var(--gradient);
+}
+
+button:has(.close-btn) {
+    background: var(--bg);
+    z-index: 1000;
 }
 
 .footer {

@@ -10,7 +10,7 @@ export default function About() {
     return (
 
         <section>
-            <div className={"about flex flex-wrap gap-2 md:justify-center md:items-center container my-5 md:w-2/3"} id={"about"}>
+            <div className={"about flex flex-wrap md:justify-center md:items-center container my-5 md:w-3/4"} id={"about"}>
 
                 <article
                     className={"m-auto px-3 md:w-1/2 order-last md:order-first"}>
@@ -33,7 +33,7 @@ export default function About() {
                         </Button>
                     </div>
                 </article>
-                <aside className={"grid md:grid-cols-2 grid-rows-2 gap-4 md:w-1/3 md:place-items-center"}>
+                <aside className={"grid md:grid-cols-2 grid-rows-2 gap-2 md:w-1/3 md:place-items-center"}>
 
                     <Image
                         alt={"portrait"}
