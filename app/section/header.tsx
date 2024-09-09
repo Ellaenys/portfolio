@@ -3,26 +3,12 @@ import {faCode, faCubes, faPalette,} from "@fortawesome/free-solid-svg-icons";
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {HeroHighlight} from "@/app/component/hero-hightlight";
+import {quickPres} from "@/app/data/header";
 
 
 export default function Header() {
 
     library.add(faCubes,faPalette, faCode);
-
-    const quickPres = [
-        {
-            name: "Conceptrice",
-            icon:faCubes,
-        },
-        {
-            name: "Designeuse",
-            icon: faPalette,
-        },
-        {
-            name: "Developpeuse",
-            icon: faCode,
-        }
-    ]
 
     return (
 

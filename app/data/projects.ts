@@ -1,0 +1,90 @@
+export const intro = {
+    title: "Mon portfolio",
+    subtitle: "Mes réalisations et mes projets",
+    content: "Titulaire de deux titres professionnels, mes apprentissages mêlés à mes expériences m'ont permis d'élaborer et de collaborer dans le cadre de projets divers.      "
+};
+
+
+export const items = [
+    {
+        title: "Maquettage des pages d'une application web",
+        tags: ["2022", "stage", "maquette", "design", "figma"],
+        description: "Lors de mon stage de formation DWWM au sein de CEZAM - le réseau de coopération entre CSE -, j'ai participé au projet d'extension de l'application web en effectuant la maquette des nouvelles pages. Les pages sont aujourd'hui en ligne.",
+        link: "https://www.figma.com/design/Ycql2hpMfNJ14L5a1N33X1/CEZAM?node-id=0-1&t=CYBqB5AFV2Ntn0TU-1",
+        contentLink: "Découvrir la maquette",
+        img: "/cezam.png",
+        name: "CEZAM",
+        badge: "en ligne",
+    },
+    {
+        title: "Conception d'un forum orienté jeu de rôle textuel",
+        tags: ["2022 - 2023", "forum", "identité visuelle", "design", "symfony", "css", "html", "js", "figma", "photoshop"],
+        description: "Projet de développement réalisé dans le cadre de la préparation du titre professionnel de développeuse web et web mobile. Sa première version comprends un forum ainsi que son interface administrateur.",
+        link: "/aether-video.mp4",
+        contentLink: "Découvrir en vidéo",
+        img: "/aether.png",
+        name: "Aether",
+        badge: "réalisé",
+    },
+    {
+        title: "Identité visuelle et design de forum",
+        tags: ["2022 - 2024", "forum", "identité visuelle", "design", "php", "css", "html", "js", "figma", "photoshop"],
+        description: "Maintien et mise en ligne de versions pour un forum comptant une communauté de plus de 100 personnes. J'ai été en charge de l'identité visuelle et du graphisme dans son ensemble. Activité arrêtée en avril 2024.",
+        link: "/apercu-sop.png",
+        contentLink: "Aperçu du forum",
+        img: "/sop.gif",
+        name: "Spring of power",
+        badge: "en ligne",
+    },
+    {
+        title: "Plateforme de gestion de chantier pour particulier",
+        tags: ["2023 - 2024" , "design", "identité visuelle", "react", "expressJs", "nestJs", "css", "html", "figma", "photoshop"],
+        description: "Projet de développement réalisé, au sein d'une équipe, dans le cadre d'une immersion professionelle en vue de la préparation du titre professionnel de conceptrice développeuse d'application. La première version a été déployée.",
+        link:"https://chappy.mbourkel.com/",
+        contentLink: "Visiter",
+        img: "/chappy.png",
+        name: "Chappy",
+        badge: "en ligne",
+    },
+    {
+        title: "Portfolio pour développeur web",
+        tags: ["2024" , "design", "identité visuelle", "figma", "photoshop"],
+        description: "Conception de la charte graphique, du logo ainsi que de la maquette d'un portfolio pour développeur back-end et devOps.",
+        link:"https://portfolio.mbourkel.com/",
+        contentLink: "Visiter",
+        img: "/mathieu.png",
+        name: "Portfolio de Mathieu Bourkel",
+        badge: "en ligne",
+    },
+    {
+        title: "Portfolio personnel",
+        tags: ["2024" , "design", "identité visuelle", "react", "nextJs", "css", "html", "figma", "photoshop"],
+        description: "Conception de mon portfolio en Next.js avec les librairies de composants Aceternity UI et NextUi. Il s'agit de sa version 3, mise en ligne en mai 2024.",
+        link:"",
+        contentLink: "rien",
+        img: "/portfolio.png",
+        name: "Mon portfolio",
+        badge: "en ligne",
+    },
+    {
+        title: "Elaboration de modèles de portfolio",
+        tags: ["2024", "en cours" , "projet", "conception", "maquette" ],
+        description: "Projet en cours de développement.",
+        link:"",
+        contentLink: "rien",
+        img: "/soon.png",
+        name: "Elaboration de modèles de portfolio",
+        badge: "à venir",
+    },
+    {
+        title: "Application de carnets pour écrivain",
+        tags: ["2024" ,"à venir" , "projet", "personnel" ],
+        description: "Projet d'espaces de réflexion, d'écriture et de partage pour auteurs.",
+        link:"",
+        contentLink: "rien",
+        img: "/soon.png",
+        name: "Cosima",
+        badge: "à venir",
+    }
+
+];

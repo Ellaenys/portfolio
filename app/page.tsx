@@ -5,7 +5,7 @@ import Skills from "@/app/section/skills";
 
 export default function Portfolio() {
   return (
-    <main>
+    <main className={"dark"}>
         <About/>
         <Skills/>
         <Projects/>

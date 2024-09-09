@@ -40,11 +40,11 @@
     }
 
     ::-webkit-scrollbar-track {
-        background: var(--gradient-scroll);
+        background: transparent;
     }
 
     ::-webkit-scrollbar-thumb {
-        background: var(--bg);
+        background: var(--gradient-scroll);
         border-radius: 0.2em;
     }
 
@@ -146,6 +146,11 @@ h2, h3, h4 {
     background: var(--gradient);
 }
 
+.skill {
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
 .skills h1 {
     position: relative;
 }
@@ -187,9 +192,9 @@ h2, h3, h4 {
 }
 
 .project-glass {
-        border-radius: 1em;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        border: 1px solid var(--border-card);
+    border-radius: 1em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-card);
 }
 
 .txt-project {
@@ -286,7 +291,6 @@ footer:after{
         transform: translateY(0);
     }
 }
-
 
 
 
