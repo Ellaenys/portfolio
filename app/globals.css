@@ -151,19 +151,19 @@ h2, h3, h4 {
     justify-content: flex-start;
 }
 
-.skills h1 {
-    position: relative;
-}
+/*.skills h1 {*/
+/*    position: relative;*/
+/*}*/
 
-.skills h1:after {
-    content:"";
-    position: absolute;
-    bottom: -0.5em;
-    right:0;
-    width: 3em;
-    height: 4px;
-    background: var(--gradient);
-}
+/*.skills h1:after {*/
+/*    content:"";*/
+/*    position: absolute;*/
+/*    bottom: -0.5em;*/
+/*    right:0;*/
+/*    width: 3em;*/
+/*    height: 4px;*/
+/*    background: var(--gradient);*/
+/*}*/
 
 .ico-skill img {
     padding: 0.3em;

@@ -12,10 +12,10 @@ import {
 export default function Projects() {
 
     return (
-        <section className={"projects container"} id={"projects"}>
+        <section className={"projects container md:w-[75vw]"} id={"projects"}>
 
             <article
-                className={"pt-10 mb-5 intro-projects my-28 md:my-16"}>
+                className={"pt-10 mb-5 intro-projects my-14 md:my-16 px-5"}>
                 <h3 className="font-bold text-foreground/70 text-medium">{intro.subtitle}</h3>
                 <h1 className="text-3xl font-bold">{intro.title}</h1>
                 <p className={"md:py-8 pb-8 pt-3 mt-4 md:mt-0"}>{intro.content}</p>

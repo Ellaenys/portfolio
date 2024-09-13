@@ -9,11 +9,11 @@ export default function About() {
 
     return (
 
-        <section className={"container"}>
-            <div className={"about flex flex-wrap md:flex-nowrap md:items-center my-28 gap-5"} id={"about"}>
+        <section className={"container md:w-[75vw]"}>
+            <div className={"about flex flex-wrap md:flex-nowrap md:items-center my-14 gap-5 justify-center px-7"} id={"about"}>
 
                 <article
-                    className={"order-last md:order-first"}>
+                    className={"order-last md:order-first md:grow"}>
                     <h3 className="font-bold text-foreground/70 text-medium">{about.subtitle}</h3>
                     <h1 className="text-3xl font-bold">{about.title}</h1>
                     <p className={"md:py-8 pb-8 pt-3 mt-4 md:mt-0 md:1/2"}>{about.content}</p>
@@ -33,7 +33,7 @@ export default function About() {
                         </Button>
                     </div>
                 </article>
-                <aside className={"grid md:grid-cols-2 grid-rows-2 gap-5 md:w-1/2 md:place-items-center"}>
+                <aside className={"grid md:grid-cols-2 grid-rows-2 gap-7 md:w-[85em] md:place-items-center md:justify-items-center"}>
 
                     <Image
                         alt={"portrait"}
@@ -64,7 +64,7 @@ export default function About() {
 
                     <Image
                         alt={"portrait"}
-                        className="object-cover md:max-w-[110px] md:block md:min-w-[110px] hidden portrait row-start-2"
+                        className="object-cover md:max-w-[110px] md:block md:min-w-[110px] hidden portrait row-start-2 -z-20"
                         height="100%"
                         src={about.picture4}
                         width="100%"

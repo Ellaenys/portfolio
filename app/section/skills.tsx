@@ -9,9 +9,9 @@ export default function Skills() {
     return (
         <section id={"skills"} className={"skills"}>
             <HeroHighlight>
-                <div className={"flex flex-col justify-center items-center container my-20 md:my-16"}>
+                <div className={"flex flex-col justify-center items-center container md:w-[73vw] my-14 md:my-16 px-10"}>
             <article
-                className={"pt-10 mb-5 intro-projects"}>
+                className={"pt-10 mb-5 intro-projects "}>
                 <h3 className="font-bold text-foreground/70 text-medium">{intro.subtitle}</h3>
                 <h1 className="text-3xl font-bold">{intro.title}</h1>
                 <p className={"pt-8"}>{intro.content}</p>
